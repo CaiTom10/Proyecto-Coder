@@ -18,6 +18,7 @@ header{
     background-color: #3b2f2f;
     border: 2px solid #f4ebd0;
     font-size: larger;
+    z-index: 10;
 }
 .header__logo{
     display: flex;
@@ -35,6 +36,23 @@ header{
     padding: 30px 20px;
     text-decoration: none;
     color: #f4ebd0;
+}
+.main-index{
+    display: flex;
+    align-items: center;
+}
+.section__carousel{
+    display: flex;
+    padding: 20px;
+}
+.texto-intro{
+    display: flex;
+    flex-direction: column;
+    margin: 50px 100px 50px 100px;
+}
+.img-carousel{
+    width: 60vw;
+    height: auto;
 }
 .imagenes__galeria{
  display: grid;
@@ -87,7 +105,6 @@ header{
     height: 30vh;
     width: auto;
     margin-top: 30px;
-    border: 1px solid /*brown*/;
 }
 .servicios{
     display: flex;
@@ -96,10 +113,11 @@ header{
 }
 .servicios-items{
     display: flex;
-    background-color: lightslategray;
+    background-color: #856d47;
     flex-wrap: wrap;
     align-content: flex-end;
     justify-content: center;
+    border: 1px solid;
 }
 .main__contacto{
     display: grid;
