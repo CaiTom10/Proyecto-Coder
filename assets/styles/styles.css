@@ -171,3 +171,60 @@ footer a{
     text-decoration: none;
 }
 
+@media (max-width: 430px){
+    header{
+        flex-direction: column;
+        justify-content: center;
+        position: static;
+    }
+    .header__logo{
+        height: 100px;
+    }
+    header h1{
+        display: none;
+    }
+    .header__menu{
+        width: 90vw;
+    }
+    header ul{
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+    .header__menu a{
+        padding: 5px;
+    }
+    footer{
+        flex-direction: column;
+    }
+    footer h2{
+        font-size: large;
+    }
+    .logos, .logo-whatsapp{
+        height: 50px;
+    }
+}
+@media (max-width: 430px){
+    .main-index{
+        flex-direction: column;
+    }
+    .img-carousel{
+        width: 90vw;
+    }
+    .texto-intro{
+        gap: 10px;
+        margin: 20px;
+    }
+}
+@media (max-width: 430px){
+    .servicios{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .servicios-items{
+        gap: 10px;
+    }
+    .imagenes-service{
+        margin-top: 0px;
+    }
+}
