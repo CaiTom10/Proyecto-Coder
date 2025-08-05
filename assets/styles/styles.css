@@ -228,5 +228,6 @@ footer a{
     .imagenes-service{
         margin-top: 0px;
         max-width: 90vw;
+        height: auto;
     }
 }
