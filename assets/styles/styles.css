@@ -43,14 +43,16 @@ header{
     display: flex;
     padding: 20px;
 }
+.img-carousel{
+    width: 60vw;
+    height: auto;
+}
 .texto-intro{
     display: flex;
     flex-direction: column;
     margin: 50px 100px 50px 100px;
-}
-.img-carousel{
-    width: 60vw;
-    height: auto;
+    color: #d6b98a;
+    font-size: 20px;
 }
 .galeria {
   display: grid;
@@ -98,6 +100,7 @@ header{
     height: 315px;
     width: auto;    
 }
+
 .imagenes-service{
     height: 30vh;
     width: auto;
@@ -116,6 +119,7 @@ header{
     justify-content: center;
     border: 1px solid;
 }
+
 .main-contacto{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -129,10 +133,7 @@ header{
     height: 450px;
     width: auto;
 }
-.intro{
-    color: #d6b98a;
-    font-size: 20px;
-}
+
 .logos{
     display: flex;
     height: 75px;
@@ -145,6 +146,7 @@ header{
     height: 75px;
     width: auto;
 }
+
 footer{
     display: flex;
     height: 150px;
