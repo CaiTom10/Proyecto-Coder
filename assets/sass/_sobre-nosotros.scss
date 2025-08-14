@@ -1,0 +1,32 @@
+@use "variables" as v;
+
+.main-sobre-nosotros {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-items: center;
+    padding: 20px;
+    img{
+        height: 315px;
+        width: auto
+    }
+}
+
+@include v.mobile {
+    .main-sobre-nosotros {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        img{
+            height: auto;
+            width: 100%;
+        }
+        iframe{
+            width: 100%;
+            height: auto;
+        }
+        p{
+            width: 100%;
+            padding: 0 10px;
+        }
+    }
+}

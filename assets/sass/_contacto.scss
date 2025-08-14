@@ -1,0 +1,43 @@
+@use "variables" as v;
+
+.main-contacto {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: auto;
+    justify-items: center;
+    padding: 20px;
+    .section-formulario{
+        padding: 10px;
+        h2{
+            text-decoration: underline;
+            padding-bottom: 30px;
+        }
+    }
+    .imagen-contacto{
+        height: 450px;
+        width: auto;
+    }
+}
+
+@include v.mobile {
+    .main-contacto {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 10px;
+        gap: 20px;
+        .section-ubicacion iframe{
+            align-self: center;
+            max-width: 100%;
+            height: auto;
+        }
+        .section-formulario {
+            width: 100%;
+            height: auto;
+        }
+        .imagen-contacto {
+            height: auto;
+            width: 100%;
+        }
+    }
+}

@@ -1,0 +1,37 @@
+@use "variables" as v;
+
+.main-index{
+    display: flex;
+    align-items: center;
+    .section-carousel{
+        display: flex;
+        padding: 20px;
+        .img-carousel{
+            width: 60vw;
+            height: auto;
+        }
+    }
+    .texto-intro{
+        display: flex;
+        flex-direction: column;
+        margin: 50px 100px 50px 100px;
+        color: v.$colorsecundario;
+        font-size: 20px;
+    }
+}
+
+@include v.mobile {
+    .main-index{
+        flex-direction: column;
+        .section-carousel{
+            width: 100%;
+            .img-carousel{
+                width: 90vw;
+            }
+        }
+        .texto-intro{
+            margin: 20px;
+            gap: 10px;
+        }
+    }
+}
