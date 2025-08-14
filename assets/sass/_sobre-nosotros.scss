@@ -10,6 +10,9 @@
         height: 315px;
         width: auto
     }
+    p{
+        color: v.$colorsecundario;
+    }
 }
 
 @include v.mobile {

@@ -285,6 +285,9 @@ footer .logo-whatsapp {
   height: 315px;
   width: auto;
 }
+.main-sobre-nosotros p {
+  color: #d6b98a;
+}
 
 @media (max-width: 430px) {
   .main-sobre-nosotros {
