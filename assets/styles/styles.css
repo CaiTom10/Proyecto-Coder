@@ -33,6 +33,8 @@ header .navbar-nav {
   list-style: none;
   border: 2px solid #f4ebd0;
   border-radius: 20px;
+  gap: 20px;
+  padding: 0 20px;
 }
 header .navbar-nav .nav-link {
   display: block;
@@ -66,7 +68,8 @@ header .navbar-nav .nav-link {
   header .navbar-nav {
     flex-direction: column;
     align-items: center;
-    padding: 0;
+    padding: 0 0;
+    gap: 0;
   }
   header .navbar-nav .nav-link {
     padding: 5px;
