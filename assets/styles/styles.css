@@ -63,6 +63,24 @@ header ul a {
     padding: 5px;
   }
 }
+@keyframes whatsapp {
+  0% {
+    transform: translateX(0);
+  }
+  20% {
+    transform: translateX(10px);
+  }
+  40% {
+    transform: translateX(-10px);
+  }
+  60% {
+    transform: translateX(0);
+  }
+}
+footer .logo-whatsapp {
+  animation: whatsapp 2s ease-in-out infinite;
+}
+
 footer {
   display: flex;
   height: 150px;
