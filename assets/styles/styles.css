@@ -25,13 +25,13 @@ header .header-logo {
   width: 190px;
   height: auto;
 }
-header ul {
+header .navbar-nav {
   display: flex;
   list-style: none;
   border: 2px solid #f4ebd0;
   border-radius: 20px;
 }
-header ul a {
+header .navbar-nav .nav-link {
   display: block;
   padding: 30px 20px;
   color: #f4ebd0;
@@ -54,12 +54,15 @@ header ul a {
   header .header-menu {
     width: 90vw;
   }
-  header ul {
+  header .header-menu .navbar-toggler, header .header-menu .navbar-toggler-icon {
+    background-color: #f4ebd0;
+  }
+  header .navbar-nav {
     flex-direction: column;
     align-items: center;
     padding: 0;
   }
-  header ul a {
+  header .navbar-nav .nav-link {
     padding: 5px;
   }
 }
