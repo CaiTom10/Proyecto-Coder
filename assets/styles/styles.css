@@ -21,6 +21,9 @@ header {
   background-color: #3b2f2f;
   font-size: larger;
 }
+header .container-fluid {
+  gap: 15vw;
+}
 header .header-logo {
   width: 190px;
   height: auto;
@@ -56,6 +59,9 @@ header .navbar-nav .nav-link {
   }
   header .header-menu .navbar-toggler, header .header-menu .navbar-toggler-icon {
     background-color: #f4ebd0;
+  }
+  header .container-fluid {
+    gap: 0;
   }
   header .navbar-nav {
     flex-direction: column;
