@@ -132,7 +132,7 @@ footer .logo-whatsapp {
 }
 .galeria .imagenes-galeria-2 img {
   width: 100%;
-  max-height: 50vh;
+  max-height: 60vh;
   aspect-ratio: 3/4;
   object-fit: cover;
 }
@@ -147,18 +147,20 @@ footer .logo-whatsapp {
   .galeria {
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 20px;
     padding: 20px;
-    width: 100%;
-    box-sizing: border-box;
   }
-  .galeria .imagenes-galeria-1,
+  .galeria .imagenes-galeria-1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    width: 100%;
+    height: auto;
+  }
   .galeria .imagenes-galeria-2,
   .galeria .video-galeria {
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+    height: auto;
   }
   .galeria .imagenes-galeria-1 img,
   .galeria .imagenes-galeria-2 img,
