@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 * {
   margin: 0;
@@ -91,6 +92,16 @@ header .navbar-nav .nav-link {
 }
 footer .logo-whatsapp {
   animation: whatsapp 2s ease-in-out infinite;
+}
+
+.main-contacto .section-formulario form input[type=reset],
+.main-contacto .section-formulario form input[type=submit] {
+  transition: background 0.3s ease;
+}
+
+.main-contacto .section-formulario form input,
+.main-contacto .section-formulario form textarea {
+  transition: border 0.3s ease, box-shadow 0.3s ease;
 }
 
 footer {
@@ -202,21 +213,98 @@ footer .logo-whatsapp {
 }
 .main-contacto {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  align-items: auto;
-  justify-items: center;
-  padding: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+  margin: 0 auto;
+  /* Ubicación (mapa) */
+  /* Formulario */
+  /* Imagen */
+}
+.main-contacto section {
+  border-radius: 12px;
+  overflow: hidden;
+}
+.main-contacto .section-ubicacion iframe {
+  width: 100%;
+  height: 100%;
+  min-height: 350px;
+  border: none;
+  border-radius: 12px;
 }
 .main-contacto .section-formulario {
-  padding: 10px;
+  background: #1a1a1a;
+  color: #f4ebd0;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .main-contacto .section-formulario h2 {
-  text-decoration: underline;
-  padding-bottom: 30px;
+  font-size: 1.6rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #d6b98a;
 }
-.main-contacto .imagen-contacto {
-  height: 450px;
-  width: auto;
+.main-contacto .section-formulario form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.main-contacto .section-formulario form label {
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+}
+.main-contacto .section-formulario form input,
+.main-contacto .section-formulario form textarea {
+  padding: 0.8rem 1rem;
+  border: 1px solid #444;
+  border-radius: 8px;
+  font-size: 1rem;
+  background: #2a2a2a;
+  color: #fff;
+  /*transition: border 0.3s ease, box-shadow 0.3s ease;*/
+}
+.main-contacto .section-formulario form input:focus,
+.main-contacto .section-formulario form textarea:focus {
+  border: 1px solid #ff6600;
+  box-shadow: 0 0 6px rgba(255, 102, 0, 0.5);
+}
+.main-contacto .section-formulario form textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+.main-contacto .section-formulario form input[type=reset],
+.main-contacto .section-formulario form input[type=submit] {
+  background: #ff6600;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  padding: 0.8rem;
+  /*transition: background 0.3s ease;*/
+}
+.main-contacto .section-formulario form input[type=reset]:hover,
+.main-contacto .section-formulario form input[type=submit]:hover {
+  background: #e05500;
+}
+.main-contacto .section-formulario form input[type=reset] {
+  background: #444;
+}
+.main-contacto .section-formulario form input[type=reset]:hover {
+  background: #222;
+}
+.main-contacto .section-imagen-contacto {
+  display: flex;
+  justify-content: center;
+}
+.main-contacto .section-imagen-contacto .imagen-contacto {
+  max-width: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
 @media (max-width: 430px) {

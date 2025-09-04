@@ -15,3 +15,11 @@
 %vibrar {
     animation: whatsapp 2s ease-in-out infinite;
 }
+
+%enviar{
+    transition: background 0.3s ease;
+}
+
+%borde{
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+}
