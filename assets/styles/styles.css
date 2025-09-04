@@ -315,6 +315,7 @@ footer .logo-whatsapp {
   align-items: center;
   justify-items: center;
   padding: 20px;
+  gap: 15px;
 }
 .main-sobre-nosotros img {
   height: 315px;
