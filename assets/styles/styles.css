@@ -23,7 +23,7 @@ header {
   font-size: larger;
 }
 header .container-fluid {
-  gap: 15vw;
+  gap: 10vw;
 }
 header .header-logo {
   width: 190px;
@@ -61,7 +61,7 @@ header .navbar-nav .nav-link {
     width: 90vw;
   }
   header .header-menu .navbar-toggler, header .header-menu .navbar-toggler-icon {
-    background-color: #f4ebd0;
+    background-color: #d6b98a;
   }
   header .container-fluid {
     gap: 0;
@@ -405,9 +405,9 @@ footer .logo-whatsapp {
   padding: 20px;
   gap: 15px;
 }
-.main-sobre-nosotros img {
-  height: 315px;
-  width: auto;
+.main-sobre-nosotros img, .main-sobre-nosotros iframe {
+  width: 25vw;
+  height: 90%;
 }
 .main-sobre-nosotros p {
   color: #d6b98a;

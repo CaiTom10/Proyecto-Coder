@@ -10,7 +10,7 @@ header{
     background-color: v.$colorbg;
     font-size: larger;
     .container-fluid{
-        gap: 15vw;
+        gap: 10vw;
     }
     .header-logo{
         width: 190px;
@@ -47,7 +47,7 @@ header{
         .header-menu{
             width: 90vw;
             .navbar-toggler, .navbar-toggler-icon{
-            background-color: v.$colorprincipal;
+            background-color: v.$colorsecundario;
             }
         }
         .container-fluid{

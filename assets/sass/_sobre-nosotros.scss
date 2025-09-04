@@ -7,9 +7,9 @@
     justify-items: center;
     padding: 20px;
     gap: 15px;
-    img{
-        height: 315px;
-        width: auto
+    img, iframe{
+        width: 25vw;
+        height:90%;
     }
     p{
         color: v.$colorsecundario;
