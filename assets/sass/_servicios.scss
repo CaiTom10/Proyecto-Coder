@@ -1,35 +1,61 @@
 @use "variables" as v;
+@use "animaciones";
 
-.servicios{
-    display: flex;
-    justify-content: space-around;
-    padding: 10px;
-    .servicios-items{
-        display: flex;
-        flex-wrap: wrap;
-        align-content: flex-end;
-        justify-content: center;
-        border: 1px solid;
-        background-color: #856d47;
-        img{
-            height: 30vh;
-            width: auto;
-            margin-top: 30px;
-        }
+.servicios {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  .servicios-items {
+    flex: 1 1 300px; // mínimo 300px y crece según espacio
+    background-color: #2a2a2a;
+    color: v.$colorprincipal;
+    border-radius: 12px;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    @extend %borde-servicios;
+    &:hover {
+        @extend %hover-servicios;
     }
+
+    h2 {
+      font-size: 1.4rem;
+      margin-bottom: 1rem;
+      color: v.$colorsecundario; 
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+      max-height: 250px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 1rem;
+      line-height: 1.4;
+    }
+  }
 }
 
+/* Mobile */
 @include v.mobile {
-    .servicios{
-        flex-direction: column;
-        gap: 20px;
-        .servicios-items{
-            gap: 10px;
-            img{
-                margin-top: 0px;
-                max-width: 90vw;
-                height: auto;
-            }
-        }
+  .servicios {
+    flex-direction: column;
+    gap: 1.5rem;
+
+    .servicios-items {
+      img {
+        max-width: 100%;
+        max-height: none;
+      }
     }
+  }
 }

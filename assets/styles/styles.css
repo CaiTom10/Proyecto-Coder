@@ -104,6 +104,15 @@ footer .logo-whatsapp {
   transition: border 0.3s ease, box-shadow 0.3s ease;
 }
 
+.servicios .servicios-items {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.servicios .servicios-items:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
 footer {
   display: flex;
   height: 150px;
@@ -264,7 +273,6 @@ footer .logo-whatsapp {
   font-size: 1rem;
   background: #2a2a2a;
   color: #fff;
-  /*transition: border 0.3s ease, box-shadow 0.3s ease;*/
 }
 .main-contacto .section-formulario form input:focus,
 .main-contacto .section-formulario form textarea:focus {
@@ -284,7 +292,6 @@ footer .logo-whatsapp {
   border: none;
   border-radius: 8px;
   padding: 0.8rem;
-  /*transition: background 0.3s ease;*/
 }
 .main-contacto .section-formulario form input[type=reset]:hover,
 .main-contacto .section-formulario form input[type=submit]:hover {
@@ -366,35 +373,49 @@ footer .logo-whatsapp {
 }
 .servicios {
   display: flex;
-  justify-content: space-around;
-  padding: 10px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 .servicios .servicios-items {
-  display: flex;
-  flex-wrap: wrap;
-  align-content: flex-end;
-  justify-content: center;
-  border: 1px solid;
-  background-color: #856d47;
+  flex: 1 1 300px;
+  background-color: #2a2a2a;
+  color: #f4ebd0;
+  border-radius: 12px;
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+.servicios .servicios-items h2 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  color: #d6b98a;
 }
 .servicios .servicios-items img {
-  height: 30vh;
-  width: auto;
-  margin-top: 30px;
+  width: 100%;
+  height: auto;
+  max-height: 250px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+.servicios .servicios-items p {
+  font-size: 1rem;
+  line-height: 1.4;
 }
 
+/* Mobile */
 @media (max-width: 430px) {
   .servicios {
     flex-direction: column;
-    gap: 20px;
-  }
-  .servicios .servicios-items {
-    gap: 10px;
+    gap: 1.5rem;
   }
   .servicios .servicios-items img {
-    margin-top: 0px;
-    max-width: 90vw;
-    height: auto;
+    max-width: 100%;
+    max-height: none;
   }
 }
 .main-sobre-nosotros {

@@ -16,10 +16,20 @@
     animation: whatsapp 2s ease-in-out infinite;
 }
 
-%enviar{
+%enviar-contacto{
     transition: background 0.3s ease;
 }
 
-%borde{
+%borde-contacto{
     transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+%borde-servicios{
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+%hover-servicios{
+    &:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    }
 }
